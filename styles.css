@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+
+    /* Checkbox */
+    transition: background 0.2s linear;
+    /* ///Checkbox */
+}
+
+#navbar {
+    background: linear-gradient(
+        rgb(122, 0, 122),
+        rgb(161, 0, 161),
+        rgb(180, 0, 180),
+        rgb(204, 0, 204),
+        rgb(236, 0, 236),
+        white 85%,
+        white 100%
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+
+    padding-top: 15px;
+    padding-bottom: 35px;
+
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    height: 71px;
+
+    /* Checkbox */
+    transition: background 0.2s linear;
+    /* ///Checkbox */
+}
+
+#navbar-list ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
+
+    width: 250px;
+}
+
+#navbar-list ul li {
+    color: #0096ff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+/* MUDANÇA DE BACKGROUND */
+/* MUDANÇA DE BACKGROUND */
+/* MUDANÇA DE BACKGROUND */
+body.dark {
+    background-color: #232c35;
+}
+
+.checkboxBG {
+    opacity: 0;
+    position: absolute;
+}
+
+.labelBox {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+
+    transform: scale(1.5);
+}
+
+#checkboxBackG {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+}
+
+.labelBox .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    
+    top: 2px;
+    left: 2px;
+
+    height: 22px;
+    width: 22px;
+
+    transform: translate(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkboxBG:checked + .labelBox .ball {
+    transform: translateX(24px);
+}
+
+body.dark #navbar {
+    background: linear-gradient(
+        rgb(122, 0, 122),
+        rgb(161, 0, 161),
+        rgb(180, 0, 180),
+        rgb(204, 0, 204),
+        rgb(236, 0, 236),
+        #232c35 85%,
+        #232c35 100%
+    );
+}
+
+/* ///MUDANÇA DE BACKGROUND */
+/* ///MUDANÇA DE BACKGROUND */
+/* ///MUDANÇA DE BACKGROUND */
