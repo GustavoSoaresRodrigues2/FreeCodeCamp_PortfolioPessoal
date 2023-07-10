@@ -4,6 +4,7 @@
     border: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
 }
 
 body {
@@ -15,6 +16,7 @@ body {
     /* ///Checkbox */
 }
 
+/* NAVBAR */
 #navbar {
     background: linear-gradient(
         rgb(122, 0, 122),
@@ -57,11 +59,76 @@ body {
 
 #navbar-list ul li {
     color: #0096ff;
-    font-size: 15px;
     font-weight: bold;
 }
+/* ///NAVBAR */
 
 
+
+
+
+
+
+/* FOOTER */
+#footer {
+    background: linear-gradient(        
+        white,
+        white,
+        rgb(236, 0, 236),
+        rgb(204, 0, 204),
+        rgb(180, 0, 180),
+        rgb(161, 0, 161),
+        rgb(122, 0, 122)
+    );
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    text-align: center;
+
+    height: 120px;
+    padding-bottom: 15px;
+
+    /* Checkbox */
+    transition: background 0.2s linear;
+    /* ///Checkbox */
+}
+
+#footer #redesSocias {
+    display: grid;
+
+    text-align: right;
+    align-items: center;
+
+    padding-right: 15px;
+}
+
+#footer i {
+    color: #0096ff;
+    padding-top: 5px;
+}
+
+#footer #lordicon {
+    color: #0096ff;
+
+}
+
+#footer span {
+    padding-top: 5px;
+}
+
+#footer #div-footer {
+    display: grid;
+
+    color: #0096ff;
+
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+
+    padding-left: 15px;
+}
+/* FOOTER */
 
 /* MUDANÇA DE BACKGROUND */
 /* MUDANÇA DE BACKGROUND */
@@ -127,9 +194,27 @@ body.dark #navbar {
         rgb(236, 0, 236),
         #232c35 85%,
         #232c35 100%
+        
+    );
+
+}
+
+body.dark #footer {
+    background: linear-gradient(        
+        #232c35,
+        #232c35,
+        rgb(236, 0, 236),
+        rgb(204, 0, 204),
+        rgb(180, 0, 180),
+        rgb(161, 0, 161),
+        rgb(122, 0, 122)
     );
 }
 
 /* ///MUDANÇA DE BACKGROUND */
 /* ///MUDANÇA DE BACKGROUND */
 /* ///MUDANÇA DE BACKGROUND */
+
+@media only screen and (max-width: 768px) {
+    
+}
