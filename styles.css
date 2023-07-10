@@ -16,6 +16,15 @@ body {
     /* ///Checkbox */
 }
 
+#container {
+    width: 100%;
+    height: 100%;
+
+    padding-top: 72px;
+
+    z-index: 1;
+}
+
 /* NAVBAR */
 #navbar {
     background: linear-gradient(
@@ -63,7 +72,38 @@ body {
 }
 /* ///NAVBAR */
 
+/* SECTION WELCOME */
+#welcome-section {
+    background-color: rgb(45,46,50);
 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+#welcome-section h1 {
+    margin: 0;
+    padding: 0;
+
+    font-size: 40px;
+}
+
+#introducao {
+    position: absolute;
+    top: 150px;
+    z-index: 1;
+}
+
+#tresdinterativo {
+    width: 100%;
+    height: 600px;
+
+    background-attachment: fixed;
+}
+
+
+/* ///SECTION WELCOME */
 
 
 
@@ -92,6 +132,8 @@ body {
     /* Checkbox */
     transition: background 0.2s linear;
     /* ///Checkbox */
+
+    z-index: 1;
 }
 
 #footer #redesSocias {
